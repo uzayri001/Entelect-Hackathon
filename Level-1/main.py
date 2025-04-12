@@ -46,7 +46,10 @@ def main():
         # Finally, go back to the next food storage
         result.append(storages[current_food])
     result.append(depot)
-    print(result)
+    
+    # Wrie the to an output file called solution.txt
+    with open("solution.txt", "w") as f:
+        f.write(str(result))
 
     
    
