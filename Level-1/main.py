@@ -44,10 +44,11 @@ def main():
             feeding = animal[:2]
             result.append(feeding)
         # Finally, go back to the next food storage
-        result.append(storages[current_food])
+        #result.append(storages[current_food])
     result.append(depot)
     
-    # Wrie the to an output file called solution.txt
+    # Write the to an output file called solution.txt
+    print(result)
     with open("solution.txt", "w") as f:
         f.write(str(result))
 
